@@ -1,2 +1,2 @@
 # RemoteVar
-A library for creating remotely synchronized variables in Python.
+A library for triggering remote events over the network in Python.

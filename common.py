@@ -1,4 +1,4 @@
-from .ScautNet import ConversionFilter, Connection, TextFilter
+from .ScautNet import ConversionFilter, Connection, TextFilter, Pipeline
 import json
 
 class Event:
@@ -20,4 +20,4 @@ def get_pipeline(socket):
     connection = Connection(socket)
     text_filter = TextFilter()
     event_filter = EventFilter()
-    return PipeLine(connection, text_filter, event_filter)
+    return Pipeline(connection, text_filter, event_filter)

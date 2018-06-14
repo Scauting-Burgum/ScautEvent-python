@@ -1,6 +1,7 @@
 from .ScautNet import Server
 from .common import get_pipeline
 from threading import Thread
+from queue import Empty
 
 class EventServerHandler(Thread):
     def __init__(self, server):
